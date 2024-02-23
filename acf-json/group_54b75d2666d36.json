@@ -1,0 +1,98 @@
+{
+    "key": "group_54b75d2666d36",
+    "title": "Options Page Fields",
+    "fields": [
+        {
+            "key": "field_5398905007df0",
+            "label": "Header Banner Text",
+            "name": "header_banner_text",
+            "prefix": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "toolbar": "full",
+            "media_upload": 1,
+            "tabs": "all"
+        },
+        {
+            "key": "field_539f7d430be1c",
+            "label": "Footer Middle Text",
+            "name": "footer_middle_text",
+            "prefix": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "toolbar": "full",
+            "media_upload": 1,
+            "tabs": "all"
+        },
+        {
+            "key": "field_539f7db10be1d",
+            "label": "Footer Last Text",
+            "name": "footer_last_text",
+            "prefix": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "toolbar": "full",
+            "media_upload": 1,
+            "tabs": "all"
+        },
+        {
+            "key": "field_5398e6e46cc9e",
+            "label": "Footer Banner Text",
+            "name": "footer_banner_text",
+            "prefix": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "toolbar": "full",
+            "media_upload": 1,
+            "tabs": "all"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "modified": 1421896882
+}

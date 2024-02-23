@@ -1,0 +1,45 @@
+{
+    "key": "group_5fd0ffce03bf5",
+    "title": "Starter kit fields",
+    "fields": [
+        {
+            "key": "field_5fd0ffdd33e5e",
+            "label": "Newsletter Block",
+            "name": "newsletter_block",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "field_5fce5aa3eb4c0"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "tpl-starterkit.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1607532551
+}
