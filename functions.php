@@ -8,7 +8,7 @@
 /**
  * Set the content width based on the theme's design and stylesheet.
  */
- 
+
 @ini_set( 'upload_max_size' , '64M' );
 @ini_set( 'post_max_size', '64M');
 @ini_set( 'max_execution_time', '300' );
@@ -128,6 +128,7 @@ function happybrainsciencecom_scripts() {
 
 	wp_enqueue_style( 'googlefonts', 'https://fonts.googleapis.com/css?family=Gudea:400,700,400italic' );
 	wp_enqueue_style( 'happybrainsciencecom-style', get_stylesheet_uri(), array() );
+    wp_enqueue_style( 'custom-css', get_template_directory_uri() . '/css/custom.css', array(), '2.0', 'all');
 
 	// add_action('wp_enqueue_scripts', 'wpa_90820');
 
@@ -244,7 +245,7 @@ require get_template_directory() . '/inc/jetpack.php';
  */
 require get_template_directory() . '/inc/functions-helpers.php';
 
-// Remove WP Version From Styles	
+// Remove WP Version From Styles
 //add_filter( 'style_loader_src', 'sdt_remove_ver_css_js', 9999 );
 // Remove WP Version From Scripts
 //add_filter( 'script_loader_src', 'sdt_remove_ver_css_js', 9999 );
@@ -274,20 +275,20 @@ function de_script()
  * Tutorial: http://skyver.ge/c
  */
 function sv_free_checkout_fields() {
-	
+
 	// Bail we're not at checkout, or if we're at checkout but payment is needed
 	if ( function_exists( 'is_checkout' ) && ( ! is_checkout() || ( is_checkout() && WC()->cart->needs_payment() ) ) ) {
 		return;
 	}
-	
+
 	// remove coupon forms since why would you want a coupon for a free cart??
 	remove_action( 'woocommerce_before_checkout_form', 'woocommerce_checkout_coupon_form', 10 );
-	
+
 	// Remove the "Additional Info" order notes
 	add_filter( 'woocommerce_enable_order_notes_field', '__return_false' );
 	// Unset the fields we don't want in a free checkout
 	function unset_unwanted_checkout_fields( $fields ) {
-	
+
 		// add or remove billing fields you do not want
 		// list of fields: http://docs.woothemes.com/document/tutorial-customising-checkout-fields-using-actions-and-filters/#section-2
 		$billing_keys = array(
@@ -304,11 +305,11 @@ function sv_free_checkout_fields() {
 		foreach( $billing_keys as $key ) {
 			unset( $fields['billing'][$key] );
 		}
-		
+
 		return $fields;
 	}
 	add_filter( 'woocommerce_checkout_fields', 'unset_unwanted_checkout_fields' );
-	
+
 	// A tiny CSS tweak for the account fields; this is optional
 	// function print_custom_css() {
 	// 	echo '<style>.create-account { margin-top: 6em; }</style>';
@@ -375,10 +376,10 @@ add_action('init', 'admin_bar' );
 // 	if ($query->is_search && !is_admin() ) {
 // 	  $query->set('post_type',array('post','page'));
 // 	 }
-  
+
 // 	 return $query;
 //   }
-  
+
 //   add_filter('pre_get_posts','filter_search');
 
 
@@ -395,7 +396,7 @@ add_theme_support( 'post-thumbnails', array( 'post', 'page' ) );
 
 add_action('acf/init', 'my_acf_init');
 function my_acf_init() {
-	
+
 	// check function exists
 	if( function_exists('acf_register_block') ) {
 
@@ -528,19 +529,19 @@ function my_acf_init() {
 }
 
 function my_acf_block_render_callback( $block ) {
-	
+
 	// convert name ("acf/testimonial") into path friendly slug ("testimonial")
 	$slug = str_replace('acf/', '', $block['name']);
-	
+
 	// include a template part from within the "template-parts/block" folder
 	if( file_exists( get_theme_file_path("/template-parts/block/content-{$slug}.php") ) ) {
 		include( get_theme_file_path("/template-parts/block/content-{$slug}.php") );
 	}
-} 
+}
 
 function removeptags( $text ) {
 	$text=str_ireplace('<p>','',$text);
-	$text=str_ireplace('</p>','',$text); 
+	$text=str_ireplace('</p>','',$text);
 	return $text;
 }
 

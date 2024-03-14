@@ -1,0 +1,40 @@
+/* Custom CSS
+ * Added in 2024 for Ver 2.0
+ **/
+/* Colors **/
+.content-area a:link,
+.content-area a:visited,
+.content-area a {
+  text-decoration: none; }
+
+#proceed-to-checkout-button {
+  background-color: #f79424; }
+  #proceed-to-checkout-button:hover {
+    background-color: #FAB142; }
+
+.product a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart {
+  background-color: #f79424; }
+  .product a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart:hover {
+    background-color: #FAB142; }
+
+#payment.custom-checkout-payment {
+  background-color: #ffd697; }
+  #payment.custom-checkout-payment .payment_box.payment_method_intuit_payments_credit_card,
+  #payment.custom-checkout-payment .payment_box.payment_method_paypal {
+    background-color: #FAB142; }
+    #payment.custom-checkout-payment .payment_box.payment_method_intuit_payments_credit_card:before,
+    #payment.custom-checkout-payment .payment_box.payment_method_paypal:before {
+      content: "";
+      display: block;
+      border: 1em solid #FAB142;
+      border-right-color: transparent;
+      border-left-color: transparent;
+      border-top-color: transparent;
+      position: absolute;
+      top: -0.75em;
+      left: 0;
+      margin: -1em 0 0 2em; }
+  #payment.custom-checkout-payment .custom-place-order {
+    background-color: #f79424; }
+
+/*# sourceMappingURL=custom.css.map */

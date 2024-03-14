@@ -1,0 +1,48 @@
+@import "variables/colors";
+
+.content-area a:link,
+.content-area a:visited,
+.content-area a {
+  text-decoration: none;
+}
+
+#proceed-to-checkout-button {
+  background-color: $orange;
+  &:hover {
+    background-color: $orange-hover;
+  }
+}
+
+.product {
+  a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart {
+    background-color: $orange;
+    &:hover {
+      background-color: $orange-hover;
+    }
+  }
+}
+
+#payment {
+  &.custom-checkout-payment {
+    background-color: $lite-orange;
+    .payment_box.payment_method_intuit_payments_credit_card,
+    .payment_box.payment_method_paypal {
+      background-color: $orange-hover;
+      &:before {
+        content: "";
+        display: block;
+        border: 1em solid $orange-hover;
+        border-right-color: transparent;
+        border-left-color: transparent;
+        border-top-color: transparent;
+        position: absolute;
+        top: -0.75em;
+        left: 0;
+        margin: -1em 0 0 2em;
+      }
+    }
+    .custom-place-order {
+      background-color: $orange;
+    }
+  }
+}
