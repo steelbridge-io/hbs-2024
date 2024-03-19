@@ -952,7 +952,7 @@ btn:focus, a:focus {
         min-height: 800px;
     }
     .h-90 {
-        height: 90vh;
+        /*height: 90vh;*/
         min-height: 800px;
     }
     .h-80 {
