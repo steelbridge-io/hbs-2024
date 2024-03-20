@@ -369,7 +369,7 @@ add_action( 'wp_print_styles', 'project_dequeue_unnecessary_styles' );
           </div>
         </div>
         <?php if ( have_rows( 'testimonials' ) ) : ?>
-          <div class="container-fluid h-100" style="height: 100vh !important;">
+          <div id="homepage-slider" class="container-fluid h-100">
             <div class="row h-100 p-0">
               <div class="col-sm-12 text-center h-100">
                 <div id="testimonialsCarousel" class="carousel slide" data-ride="carousel">

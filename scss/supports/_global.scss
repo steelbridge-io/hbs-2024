@@ -1,5 +1,30 @@
 /* Global Styles **/
 
+@import "variables/colors";
+
+#sib_signup_form_2 {
+  background-color: $lite-orange !important;
+  padding-left: 1.618em !important;
+  padding-right: 1.618em !important;
+  padding-top: 1.618em !important;
+  padding-bottom: 1.618em !important;
+}
+
+.sib-default-btn {
+  background-color: $orange !important;
+  &:hover {
+    background-color: $orange-hover !important;
+  }
+}
+
+.sib_signup_box_inside_2 {
+  #sib_captcha {
+    div {
+      margin: 0 auto !important;
+    }
+  }
+}
+
 a {
   text-decoration: none;
   &.header-link {

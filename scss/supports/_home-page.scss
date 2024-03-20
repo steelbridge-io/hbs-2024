@@ -1,5 +1,17 @@
 /* Home Page Styles **/
+@media (min-width: 768px) and (max-width: 992px) {
+  #homepage-slider {
+    &.h-100 {
+      min-height: 920px;
+    }
 
+    .row {
+      .h-100 {
+        min-height: 920px;
+      }
+    }
+  }
+}
 .stress-less {
   .image-col {
     img {

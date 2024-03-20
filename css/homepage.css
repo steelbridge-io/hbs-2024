@@ -644,7 +644,7 @@ text-align: center;
         padding: 0 !important;
     }
     #newsletter {
-        min-height: 750px !important;
+        min-height: 791px !important;
     }
 }
 @media (max-width: 768px) {
@@ -960,8 +960,8 @@ btn:focus, a:focus {
         min-height: 800px;
     }
     .h-70 {
-        height: 80vh;
-        min-height: 750px;
+        height: 113vh;
+        min-height: 845px;
     }
     .h-60 {
         height: 60vh;

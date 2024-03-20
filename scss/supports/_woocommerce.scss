@@ -1,5 +1,10 @@
 @import "variables/colors";
 
+.woocommerce-result-count,
+.orderby {
+  display: none;
+}
+
 .content-area a:link,
 .content-area a:visited,
 .content-area a {
@@ -16,6 +21,7 @@
 .product {
   a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart {
     background-color: $orange;
+    text-align: center;
     &:hover {
       background-color: $orange-hover;
     }
@@ -43,6 +49,37 @@
     }
     .custom-place-order {
       background-color: $orange;
+    }
+  }
+}
+
+#custom-loop-products {
+  li.product {
+    h2.woocommerce-loop-product__title {
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+    }
+  }
+}
+
+@media (min-width: 767.99px) {
+  #custom-loop-products {
+    height: 475px;
+    li.product {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #custom-loop-products {
+    li.product {
+      width: 100%;
+      padding: 1em;
+      height: initial;
     }
   }
 }

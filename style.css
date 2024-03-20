@@ -56,7 +56,7 @@ h1 {
   font-size: 36px !important;
 }
 h2 {
-  font-size: 30.6px !important;
+  font-size: 30.6px;
   line-height: 45.9px;
 }
 h1, h2, h3, h4, h5, h6 {
