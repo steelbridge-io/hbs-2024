@@ -644,7 +644,7 @@ text-align: center;
         padding: 0 !important;
     }
     #newsletter {
-        min-height: 791px !important;
+        min-height: 886px;
     }
 }
 @media (max-width: 768px) {
@@ -960,7 +960,7 @@ btn:focus, a:focus {
         min-height: 800px;
     }
     .h-70 {
-        height: 113vh;
+        height: 105vh;
         min-height: 845px;
     }
     .h-60 {

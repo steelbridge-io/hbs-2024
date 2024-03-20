@@ -3,6 +3,12 @@
  **/
 /* Global Styles **/
 /* Colors **/
+@media (max-width: 390px) {
+  #sib_captcha.g-recaptcha {
+    transform: scale(0.82);
+    -webkit-transform: scale(0.82);
+    transform-origin: 0 0;
+    -webkit-transform-origin: 0 0; } }
 #sib_signup_form_2 {
   background-color: #ffd697 !important;
   padding-left: 1.618em !important;
@@ -28,7 +34,7 @@ a {
   width: 128px; }
 
 /* Home Page Styles **/
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 767.99px) {
   #homepage-slider.h-100 {
     min-height: 920px; }
   #homepage-slider .row .h-100 {
