@@ -644,7 +644,7 @@ text-align: center;
         padding: 0 !important;
     }
     #newsletter {
-        min-height: 886px;
+        min-height: 800px !important;
     }
 }
 @media (max-width: 768px) {
@@ -910,6 +910,11 @@ btn:focus, a:focus {
 .search-form svg:hover {
     cursor: pointer;
 }
+
+.h-testimonial {
+    min-height: 115vh;
+}
+
 @media (max-width: 1200px) and (min-width: 992px) {
     .search-form {
         display: none;
@@ -948,11 +953,12 @@ btn:focus, a:focus {
         display: flex;
         align-items: center;
     }
+
     .h-100 {
         min-height: 800px;
     }
     .h-90 {
-        /*height: 90vh;*/
+        height: 90vh;
         min-height: 800px;
     }
     .h-80 {
@@ -960,8 +966,8 @@ btn:focus, a:focus {
         min-height: 800px;
     }
     .h-70 {
-        height: 105vh;
-        min-height: 845px;
+        height: 80vh;
+        min-height: 750px;
     }
     .h-60 {
         height: 60vh;

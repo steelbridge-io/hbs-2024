@@ -1,0 +1,308 @@
+.home_slider_wrap {
+  @include full;
+}
+.home_slider {
+  &--list {
+    margin: 0;
+  }
+  &--item_wrap {}
+  &--item {
+    display: block;
+    max-width: 56.8em;
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    @include bp(small) {
+      padding: 0;
+    }
+  }
+  &--image {
+    margin: 0 auto;
+    @include bp(small) {
+      display: block;
+      opacity: 0.7;
+    }
+    @include bp(medium) {
+      float: left;
+      // width: 50%;
+    }
+    @include bp(large) {
+      float: left;
+      // margin-left: 3em;
+    }
+  }
+  &--caption {
+    position: absolute;
+    padding-top: 1em;
+    right: 0;
+    top: 0;
+    width: 100%;
+    @include bp(medium) {
+      // padding-top: 2em;
+      width: 50%;
+    }
+    @include bp(large) {
+      right: 3em;
+      padding-top: 3.2em;
+      width: 24.4em;
+    }
+  }
+  &--caption_title {
+    font-size: 1.5em;
+    line-height: 1em;
+    text-align: center;
+    @include bp(medium) {
+      font-size: 1.7em;
+    }
+    @include bp(large) {
+      font-size: 3em;
+    }
+
+  }
+  &--caption_call_to_action {
+    margin-top: 1em;
+    display: none;
+    @include bp(medium) {
+      line-height: 1;
+    }
+    @include bp(medium-andup) {
+      display: block;
+    }
+  }
+}
+.bx-controls {
+  margin-top: -1.5em;
+  position: relative;
+  z-index: 500;
+  @include bp(large) {
+    margin-top: -3em;
+    padding-bottom: 1.5em;
+  }
+}
+.bx-pager {
+  text-align: right;
+  @include wrap;
+  padding-right: 3.5em;
+}
+.bx-pager-item {
+  display: inline;
+}
+.bx-pager-link {
+  border: 0.2em solid $white;
+  border-radius: 100%;
+  display: inline-block;
+  height: 0.7em;
+  line-height: 3em;
+  margin-left: 0.8em;
+  overflow: hidden;
+  width: 0.7em;
+  &.active {
+    background-color: $white;
+  }
+}
+//
+// Under Slider
+//
+.home_under_slider_wrap {
+  @include full;
+  padding-top: $size-vertical;
+}
+.home_under_slider {
+  @include wrap;
+  &--text {
+    font-size: $size-largeText;
+    text-align: center;
+    a {
+      font-weight: 700;
+    }
+    p {
+      margin-bottom: 0.5em;
+    }
+  }
+  &--cta {
+    font-size: $size-largeText;
+    font-weight: 700;
+    float: right;
+    text-decoration: none;
+    &:link, &:visited {
+      color: color(heading);
+    }
+  }
+}
+//
+// Sales Funnel Boxes
+//
+.sales_funnel_boxes_wrap {
+  @include full;
+  margin-top: $size-vertical;
+}
+.sales_funnel_boxes {
+  border-top: 1px solid color(color);
+  text-align: center;
+  @include wrap;
+  @include bp(large) {
+    margin-top: 1.6em;
+  }
+}
+.sales_funnel_box {
+  margin-top: 1.6em;
+  width: 100%;
+  @include bp(medium) {
+    @include span(4);
+    &.odd {
+      margin-left: 0;
+    }
+  }
+  @include bp(large) {
+    margin-top: 0;
+    @include span(4 (gutters: 2));
+  }
+  &:first-child {
+    margin-left: 0;
+  }
+  &--image {
+    @include bp(large) {
+      margin-top: -1.6em;
+    }
+  }
+  &--title {
+    color: color(heading);
+    font-size: 1.7em;
+    font-weight: 700;
+    line-height: 1.1;
+    padding-top: 0.2em;
+    padding-bottom: 0.5em;
+  }
+  &--content {
+    ul {
+      margin-left: 0;
+    }
+    li {
+      list-style-position: inside;
+    }
+  }
+  &--cta {
+    font-weight: 700;
+    text-decoration: none;
+  }
+}
+//
+// Meet Scott
+//
+.meet_wrap {
+  background-color: $yellow;
+  margin-top: 2em + $size-vertical;
+  @include full;
+  @include bp(large) {
+    margin-bottom: 2em;
+  }
+}
+.meet {
+  @include wrap;
+  @include bp(small) {
+    padding-bottom: 2em;
+  }
+  &--image_wrap {
+    float: left;
+    margin-left: 0;
+    width: 100%;
+    @include bp(medium) {
+      @include span(3);
+      margin-left: 0;
+    }
+    @include bp(large) {
+      @include span(5);
+      margin-left: 0;
+    }
+  }
+  &--image {
+    border: 0.7em solid color(bg);
+    border-radius: 100%;
+    box-shadow: 0.5em 0.5em 1em color(shadow);
+    display: block;
+    margin: -2em auto 0 auto;
+    @include bp(medium-andup) {
+      margin-bottom: -2em;
+    }
+    @include bp(large) {
+      box-sizing: content-box;
+    }
+  }
+  &--content {
+    width: 100%;
+    @include bp(medium) {
+      @include span(5);
+    }
+    @include bp(medium-andup) {
+      padding-top: 1em;
+    }
+    @include bp(large) {
+      @include span(11);
+    }
+    p {
+      @include bp(small) {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &--cta {
+    float: right;
+    font-size: 1.1em;
+    font-weight: 700;
+    text-decoration: none;
+    &:link, &:visited {
+      color: $white;
+    }
+    &:hover, &:active {
+      text-decoration: underline;
+    }
+  }
+}
+//
+// Happy Clients
+//
+.happy_clients_wrap {
+  @include full;
+}
+.happy_clients {
+  @include wrap;
+  margin-top: $size-vertical;
+  &--text {
+    font-size: $size-largeText;
+    text-align: center;
+    p {
+      margin-bottom: 0;
+    }
+  }
+  &--cta {
+    &:link, &:visited {
+      color: color(link_active);
+      font-weight: 700;
+      text-decoration: none;
+    }
+  }
+  &--client_list {
+    text-align: center;
+    margin: $size-vertical/2 auto $size-vertical;
+    max-width: 40em;
+  }
+  &--client_logo {}
+  &--as_seen_in {
+    border-top: 1px solid color(color);
+    padding-top: $size-vertical - 0.2em;
+    text-align: center;
+    &--title {
+      display: inline;
+    }
+    &--logo {
+      padding: 0.2em 0.7em;
+    }
+  }
+}
+.feedback_wrap {
+  @include full;
+}
+.feedback {
+  @include wrap;
+  max-width: 40em;
+}

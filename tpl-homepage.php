@@ -369,11 +369,11 @@ add_action( 'wp_print_styles', 'project_dequeue_unnecessary_styles' );
           </div>
         </div>
         <?php if ( have_rows( 'testimonials' ) ) : ?>
-          <div id="homepage-slider" class="container-fluid h-100">
-            <div class="row h-100 p-0">
-              <div class="col-sm-12 text-center h-100">
+          <div class="container-fluid h-testimonial">
+            <div class="row h-testimonial p-0">
+              <div class="col-sm-12 text-center h-testimonial">
                 <div id="testimonialsCarousel" class="carousel slide" data-ride="carousel">
-                  <div class="carousel-inner h-100">
+                  <div class="carousel-inner h-testimonial">
                   <?php $index = 0; ?>
                   <?php while ( have_rows( 'testimonials' ) ) : the_row(); ?>
                   <?php $activeClass = '';
@@ -381,9 +381,9 @@ add_action( 'wp_print_styles', 'project_dequeue_unnecessary_styles' );
                     $activeClass = 'active';
                   }
                   ?>
-                    <div class="carousel-item h-100 <?php echo $activeClass; ?>" style="height: 100vh !important;" slide-number="<?php echo $index; ?>">
-                      <div class="d-block w-100 h-100" style="background-color: <?php echo get_sub_field( 'card_background_color' ); ?>;"></div>
-                      <div class="carousel-caption d-flex h-100 text-center justify-content-center align-self-center">
+                    <div class="carousel-item h-testimonial <?php echo $activeClass; ?>" style="height: 100vh !important;" slide-number="<?php echo $index; ?>">
+                      <div class="d-block w-100 h-testimonial" style="background-color: <?php echo get_sub_field( 'card_background_color' ); ?>;"></div>
+                      <div class="carousel-caption d-flex h-testimonial text-center justify-content-center align-self-center">
                         <div class="caption-inner my-auto">
                           <?php $image = get_sub_field( 'image' ); ?>
                           <?php if ( $image ) : ?>
@@ -419,7 +419,7 @@ add_action( 'wp_print_styles', 'project_dequeue_unnecessary_styles' );
 
     <?php if ( have_rows( 'newsletter' ) ) : ?>
       <?php while ( have_rows( 'newsletter' ) ) : the_row(); ?>
-      <section id="newsletter" class="row h-70 my-auto height-auto-mobile" style="background-image=<?php the_sub_field( 'background_image' ); ?>;">
+      <section id="newsletter" class="row my-auto height-auto-mobile" style="background-image=<?php the_sub_field( 'background_image' ); ?>;">
         <div class="container my-auto mt-5">
             <div class="row my-auto">
               <div class="col-12 col-lg-8 offset-lg-2 text-center mb-2">

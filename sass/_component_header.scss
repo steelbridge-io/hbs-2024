@@ -1,0 +1,211 @@
+// 88""Yb    db    88b 88 88b 88 888888 88""Yb
+// 88__dP   dPYb   88Yb88 88Yb88 88__   88__dP
+// 88""Yb  dP__Yb  88 Y88 88 Y88 88""   88"Yb
+// 88oodP dP""""Yb 88  Y8 88  Y8 888888 88  Yb
+.site-header {
+  text-align: center;
+}
+.site-banner_wrap {
+  @include alt_style;
+  @include full;
+}
+.site-banner {
+  padding: 0.5em 0;
+  @include wrap;
+  p {
+    margin-bottom: 0;
+  }
+}
+.site-branding_wrap {
+  text-align: left;
+  @include full;
+}
+.site-branding {
+  @include wrap;
+  height: 9.16em;
+  @include bp(medium-andup) {
+    height: 9.16em;
+  }
+}
+// 88      dP"Yb   dP""b8  dP"Yb
+// 88     dP   Yb dP   `" dP   Yb
+// 88  .o Yb   dP Yb  "88 Yb   dP
+// 88ood8  YbodP   YboodP  YbodP
+.logo_wrap {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  @include bp(medium-andup) {
+    width: 36.5em;
+  }
+}
+.site-title {
+  color: $lightGray;
+  font-family: $font-trebuchet;
+  font-size: 1.6em;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  @include bp(medium-andup) {
+    font-size: 3.6em;
+    left: 0.7em;
+    position: absolute;
+    top: 0.3em;
+  }
+  @include bp(medium-early) {
+    left: 0;
+  }
+}
+.site-tagline {
+  &--first_line, &--second_line {
+    color: color(color);
+    display: inline;
+    font-size: 1em;
+    font-weight: 400;
+    @include bp(medium-andup) {
+      display: block;
+      position: absolute;
+    }
+  }
+  &--first_line {
+    @include bp(medium-andup) {
+      left: 13.25em;
+      top: 5.3em;
+    }
+    @include bp(medium-early) {
+      left: 10.7em;
+    }
+  }
+  &--second_line {
+    @include bp(medium-andup) {
+      left: 17.2em;
+      top: 6.5em;
+    }
+    @include bp(medium-early) {
+      left: 14.9em;
+    }
+  }
+}
+// 88b 88    db    Yb    dP
+// 88Yb88   dPYb    Yb  dP
+// 88 Y88  dP__Yb    YbdP
+// 88  Y8 dP""""Yb    YP
+.menu-toggle {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  color: color(alt_color);
+  font-size: 1em;
+  text-shadow: none;
+  &:hover, &:focus {
+    box-shadow: none;
+    background-color: transparent;
+  }
+  &--icon {
+    display: block;
+    float: left;
+    font-size: 2em;
+    line-height: 0.35em;
+  }
+}
+.main-navigation_wrap {
+  @include alt_style;
+  @include full;
+}
+.main-navigation {
+  @include bp(medium-andup) {
+    padding: 0.3em 0;
+  }
+  text-transform: uppercase;
+  @include wrap;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    @include group;
+  }
+  li {
+    display: inline;
+  }
+  a {
+    text-decoration: none;
+    white-space: nowrap;
+    &:link, &:visited {
+      color: color(alt_color);
+    }
+    &:hover, &:active {
+      color: color(link_active);
+    }
+  }
+  .current-menu-item, .current_page_parent, .current_page_ancestor {
+    > a {
+      font-weight: 700;
+    }
+  }
+  .menu-item {
+    @include bp(medium-andup) {
+      border-left: 1px solid $lightGray;
+      &:first-child {
+        border-left: none;
+      }
+    }
+    a {
+      @include bp(medium) {
+        padding: 0 0.5em 0 0.4em;
+      }
+      @include bp(large) {
+        padding: 0 1.5em 0 1.4em;
+      }
+    }
+    &-has-children {
+      position: relative;
+      &:hover {
+        .sub-menu {
+          display: block;
+        }
+      }
+    }
+  }
+  .sub-menu {
+    background-color: color(alt_bg);
+    top: 100%;
+    display: none;
+    left: 0;
+    position: absolute;
+    text-align: left;
+    z-index: 500;
+    @include bp(medium-andup) {
+      padding: 0.5em 0;
+    }
+    .menu-item {
+      @include bp(medium-andup) {
+        border-left: 0;
+        display: block;
+        padding: 0.2em 0;
+        @include group;
+      }
+      a {
+        @include bp(medium-andup) {
+          padding: 0.2em 1.4em;
+        }
+      }
+    }
+  }
+  &.toggled {
+    @include bp(small) {
+      text-align: left;
+      .sub-menu {
+        display: block;
+        margin-bottom: 0.5em;
+        position: static;
+        .menu-item {
+          padding-left: 1em;
+        }
+      }
+      .menu-item {
+        display: block;
+      }
+    }
+  }
+}

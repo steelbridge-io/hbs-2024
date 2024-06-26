@@ -1,5 +1,11 @@
 @import "variables/colors";
 
+.return-to-shop {
+  a.button:hover {
+    color: $font-white
+  }
+}
+
 .woocommerce-result-count,
 .orderby {
   display: none;
@@ -17,6 +23,7 @@
     background-color: $orange-hover;
   }
 }
+
 
 .product {
   a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart {

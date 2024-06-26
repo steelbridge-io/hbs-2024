@@ -1,0 +1,22 @@
+/*!
+Theme Name: Happy Brain Science 2014
+Theme URI: http://www.happybrainscience.com/
+Author: Fitz Ryland
+Author URI: http://workwith.fitz.to/
+Description: A WordPress theme for Happy Brain Science
+Version: 1.0
+Text Domain: happybrainsciencecom
+*/
+@import 'susy';
+@import 'breakpoint';
+@import 'global';
+@import 'layout';
+@import 'base_reset';
+@import 'base';
+@import 'component';
+@import 'component_header';
+@import 'component_footer';
+@import 'component_home';
+@import 'component_recommended-reading';
+@import 'component_blog';
+@import 'component_meet-the-team';

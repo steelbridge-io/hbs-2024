@@ -3040,7 +3040,7 @@ body, html {
 }
 @media (min-width: 1200px) {
   .entry_header, .fc_block--text_block, .fc_block--large_font_block, .fc_block--three_columns_block, .fc_block--featured_content, .fc_block--text_block, .flexible_team_member, .featured_quote , .client_quotes_wrap, .page-template-tpl-happiness_test_confirmation-php .site-main, .error404 .site-content, .site-banner, .site-branding , .bx-pager , .sales_funnel_boxes, .home_under_slider, .featured_post,.meet, .happy_clients , .feedback, .rr_wrap, .blog_wrap, .single_header, .single_content_wrap, .team_member--desc_wrap, .type-product, .post-type-archive-product .site-content, .product-template-default .related.products {
-    max-width: 1140px !important;
+    max-width: 1140px;
   }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -3158,8 +3158,8 @@ body.single header.single_header img.wp-post-image {
   height: auto;
 } */
 .woocommerce .col2-set .col-1, .woocommerce-page .col2-set .col-1, .woocommerce .col2-set .col-2, .woocommerce-page .col2-set .col-2 {
-  flex: 100% !important;
-  max-width: 100% !important;
+  flex: 100%;
+  max-width: 100%;
 }
 textarea {
   min-width: 300px;
@@ -3199,7 +3199,7 @@ textarea {
   margin-left: .5em;
 }
 .product img.alignleft {
-  margin-right: 10px !important;
+  margin-right: 10px;
 }
 #coupon_code {
   width: 150px !important;
