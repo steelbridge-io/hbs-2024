@@ -199,16 +199,16 @@ add_action( 'wp_print_styles', 'project_dequeue_unnecessary_styles' );
           <div class="gamecontainer socialIcons">
 
             <!-- Facebook -->
-            <a id="facebook-share" href="https://www.facebook.com/sharer.php?u=https://www.happybrainscience.com/daily-happiness-boost/" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook"/></a>
+            <a id="facebook-share" href="https://www.facebook.com/sharer.php?u=https://www.happybrainscience.com/daily-happiness-boost/" target="_blank"><i class="lni lni-facebook-oval"></i></a>
 
             <!-- Twitter -->
-            <a id="twitter-share" href="https://twitter.com/intent/tweet?url=https://www.happybrainscience.com/daily-happiness-boost/&text=How about a happiness boost?" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/twitter.png" display=block alt="Twitter"/></a>
+            <a id="twitter-share" href="https://twitter.com/intent/tweet?url=https://www.happybrainscience.com/daily-happiness-boost/&text=How about a happiness boost?" target="_blank"><i class="lni lni-twitter-original"></i></a>
 
             <!-- LinkedIn -->
-            <a id="linkedin-share" href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.happybrainscience.com/daily-happiness-boost/" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn"/></a>
+            <a id="linkedin-share" href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.happybrainscience.com/daily-happiness-boost/" target="_blank"><i class="lni lni-linkedin-original"></i></a>
 
             <!-- Email -->
-            <a id="email-share" href="mailto:?Subject=Daily Happiness Boost&Body=I%20thought%20you%20might%20like%20a%20random%20happiness%20boost!%20 https://www.happybrainscience.com/daily-happiness-boost/" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/email.png" display=block alt="Email"/></a>
+            <a id="email-share" href="mailto:?Subject=Daily Happiness Boost&Body=I%20thought%20you%20might%20like%20a%20random%20happiness%20boost!%20 https://www.happybrainscience.com/daily-happiness-boost/" target="_blank"><i class="lni lni-inbox"></i></a>
 
           </div>
         </div>
