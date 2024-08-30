@@ -43,6 +43,11 @@ a.header-link {
   align-items: center !important;
 }
 
+/* Starter Kit **/
+#newsletter.h-70 {
+  height: 97vh;
+}
+
 /* Navigation **/
 #menu-item-17161 {
   width: 128px;
