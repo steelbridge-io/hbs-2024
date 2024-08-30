@@ -125,7 +125,7 @@ function happybrainsciencecom_scripts() {
 	//   wp_enqueue_script('jquery-color',get_bloginfo('template_directory').'/js/lib/jquery.color-2.1.2.min.js',array('jquery'), false, true);
 	//   wp_enqueue_script('main',get_bloginfo('template_directory').'/js/main.js',array('jquery', 'bxslider', 'jquery-color', 'mix-it-up'), false, true);
 	// endif;
-
+    wp_enqueue_style( 'linicons', 'https://cdn.lineicons.com/4.0/lineicons.css', array(),'4.0', 'all' );
 	wp_enqueue_style( 'googlefonts', 'https://fonts.googleapis.com/css?family=Gudea:400,700,400italic' );
 	wp_enqueue_style( 'happybrainsciencecom-style', get_stylesheet_uri(), array() );
     wp_enqueue_style( 'custom-css', get_template_directory_uri() . '/css/custom.css', array(), '2.0', 'all');
