@@ -18,3 +18,14 @@
     }
   }
 }
+
+.blog {
+  .entry-header {
+    .wp-caption.featured {
+      margin-top: 1em;
+      .wp-caption-text {
+        text-align: left !important;
+      }
+    }
+  }
+}
