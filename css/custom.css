@@ -3,6 +3,12 @@
  **/
 /* Global Styles **/
 /* Colors **/
+/* Linicon size **/
+.lni {
+  font-size: 2.2rem;
+  margin: 0.3em;
+}
+
 @media (max-width: 390px) {
   #sib_captcha.g-recaptcha {
     transform: scale(0.82);

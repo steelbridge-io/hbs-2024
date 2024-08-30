@@ -1,6 +1,12 @@
 /* Global Styles **/
 @import "variables/colors";
 
+/* Linicon size **/
+.lni {
+  font-size: 2.2rem;
+  margin: .3em;
+}
+
 @media (max-width: 390px) {
   #sib_captcha {
     &.g-recaptcha {
