@@ -43,6 +43,17 @@ a.header-link {
   text-decoration: none;
 }
 
+#content .content-area a {
+  color: #f79424;
+}
+#content .content-area a:hover {
+  color: #FAB142;
+}
+
+footer.entry-footer .cat-links a:hover {
+  color: #FAB142;
+}
+
 /** Pages */
 .page-id-14 #page #content #primary.content-area #main #post-14 .entry_header_wrap header.entry_header {
   display: flex !important;

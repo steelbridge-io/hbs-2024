@@ -1338,8 +1338,13 @@ footer a {
     transition: color .25s;
 }
 
-footer a:hover,
-footer a:active {
+footer a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer #footer-menu a:hover,
+footer #footer-menu a:active {
     color: #fff !important;
     text-decoration: none;
 }

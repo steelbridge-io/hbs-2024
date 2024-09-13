@@ -48,3 +48,22 @@ a {
   }
 }
 
+#content {
+  .content-area {
+    a {
+      color: $orange;
+    }
+    a:hover {
+      color: $orange-hover;
+    }
+  }
+}
+
+footer.entry-footer {
+  .cat-links {
+    a:hover {
+      color: $orange-hover;
+    }
+  }
+}
+
